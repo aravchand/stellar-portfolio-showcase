@@ -14,41 +14,41 @@ const Navbar = () => {
   }, []);
 
   const navItems = [
-    { name: 'Home', href: '#home', icon: Home },
-    { name: 'About', href: '#about', icon: User },
-    { name: 'Projects', href: '#projects', icon: Briefcase },
-    { name: 'Social Initiatives', href: '#social', icon: Heart },
-    { name: 'Contact', href: '#contact', icon: Mail },
+    { name: 'HOME', href: '#home', icon: Home },
+    { name: 'ABOUT', href: '#about', icon: User },
+    { name: 'PROJECTS', href: '#projects', icon: Briefcase },
+    { name: 'SOCIAL ENTREPRENEURSHIP', href: '#social', icon: Heart },
+    { name: 'CONTACT', href: '#contact', icon: Mail },
   ];
 
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled 
-          ? 'bg-background/90 backdrop-blur-md border-b border-border shadow-lg' 
-          : 'bg-transparent'
+          ? 'bg-background/95 backdrop-blur-md border-b border-border shadow-lg' 
+          : 'bg-background/80 backdrop-blur-sm'
       }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <a href="#home" className="text-xl font-bold font-mono text-primary">
-            {'</PORTFOLIO>'}
+          <a href="#home" className="text-lg font-bold font-mono text-foreground">
+            {'</BENSON>'}
           </a>
 
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-6">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="nav-link flex items-center gap-2"
+                className="nav-link flex flex-col items-center gap-1 py-2"
               >
-                <item.icon size={16} />
-                <span>{item.name}</span>
+                <item.icon size={16} className="text-primary" />
+                <span className="text-xs tracking-wide">{item.name}</span>
               </a>
             ))}
           </div>
 
-          <div className="md:hidden flex items-center gap-4">
+          <div className="lg:hidden flex items-center gap-3">
             {navItems.map((item) => (
               <a
                 key={item.name}
@@ -56,7 +56,7 @@ const Navbar = () => {
                 className="nav-link p-2"
                 aria-label={item.name}
               >
-                <item.icon size={18} />
+                <item.icon size={18} className="text-primary" />
               </a>
             ))}
           </div>

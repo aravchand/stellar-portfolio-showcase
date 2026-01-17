@@ -1,5 +1,6 @@
 import { ExternalLink, FileText, Play } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Code } from 'lucide-react';
 
 interface ProjectCardProps {
   title: string;
@@ -10,14 +11,15 @@ interface ProjectCardProps {
     demo?: string;
     video?: string;
     github?: string;
+    poster?: string;
   };
 }
 
 const ProjectCard = ({ title, description, image, links }: ProjectCardProps) => {
   return (
-    <div className="group bg-card/50 border border-border rounded-xl overflow-hidden card-hover">
+    <div className="group bg-card/30 border border-border rounded-xl overflow-hidden card-hover">
       {/* Image */}
-      <div className="aspect-video bg-gradient-to-br from-secondary to-muted relative overflow-hidden">
+      <div className="aspect-[16/10] bg-gradient-to-br from-secondary to-muted relative overflow-hidden">
         {image ? (
           <img 
             src={image} 
@@ -31,15 +33,15 @@ const ProjectCard = ({ title, description, image, links }: ProjectCardProps) => 
             </div>
           </div>
         )}
-        <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent opacity-60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-card/80 to-transparent opacity-60" />
       </div>
 
       {/* Content */}
-      <div className="p-6">
-        <h3 className="text-xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors">
+      <div className="p-5">
+        <h3 className="text-lg font-bold mb-2 text-foreground group-hover:text-primary transition-colors">
           {title}
         </h3>
-        <p className="text-muted-foreground text-sm mb-4 line-clamp-3">
+        <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
           {description}
         </p>
 
@@ -50,12 +52,10 @@ const ProjectCard = ({ title, description, image, links }: ProjectCardProps) => 
               <Button
                 asChild
                 size="sm"
-                variant="outline"
-                className="border-primary/30 hover:bg-primary/10 hover:border-primary text-xs"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 text-xs rounded-full"
               >
                 <a href={links.paper} target="_blank" rel="noopener noreferrer">
-                  <FileText size={14} className="mr-1" />
-                  Read Paper
+                  Read the Paper!
                 </a>
               </Button>
             )}
@@ -63,12 +63,21 @@ const ProjectCard = ({ title, description, image, links }: ProjectCardProps) => 
               <Button
                 asChild
                 size="sm"
-                variant="outline"
-                className="border-primary/30 hover:bg-primary/10 hover:border-primary text-xs"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 text-xs rounded-full"
               >
                 <a href={links.video} target="_blank" rel="noopener noreferrer">
-                  <Play size={14} className="mr-1" />
-                  Watch
+                  Watch my Project Pitch!
+                </a>
+              </Button>
+            )}
+            {links.poster && (
+              <Button
+                asChild
+                size="sm"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 text-xs rounded-full"
+              >
+                <a href={links.poster} target="_blank" rel="noopener noreferrer">
+                  See the Poster!
                 </a>
               </Button>
             )}
@@ -76,7 +85,7 @@ const ProjectCard = ({ title, description, image, links }: ProjectCardProps) => 
               <Button
                 asChild
                 size="sm"
-                className="bg-primary text-primary-foreground hover:bg-primary/90 text-xs"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 text-xs rounded-full"
               >
                 <a href={links.demo} target="_blank" rel="noopener noreferrer">
                   <ExternalLink size={14} className="mr-1" />
@@ -90,8 +99,5 @@ const ProjectCard = ({ title, description, image, links }: ProjectCardProps) => 
     </div>
   );
 };
-
-// Need to import Code
-import { Code } from 'lucide-react';
 
 export default ProjectCard;

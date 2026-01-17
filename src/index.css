@@ -6,52 +6,51 @@
 
 @layer base {
   :root {
-    /* Dark cosmic theme */
-    --background: 220 30% 10%;
+    /* Dark blue-gray theme matching reference */
+    --background: 215 35% 15%;
     --foreground: 210 40% 98%;
 
-    --card: 220 30% 13%;
+    --card: 215 35% 18%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 220 30% 13%;
+    --popover: 215 35% 18%;
     --popover-foreground: 210 40% 98%;
 
-    /* Cyan/Teal accent */
-    --primary: 174 70% 50%;
-    --primary-foreground: 220 30% 10%;
+    /* Teal/Mint accent matching reference */
+    --primary: 160 60% 45%;
+    --primary-foreground: 215 35% 15%;
 
-    --secondary: 220 25% 18%;
+    --secondary: 215 30% 22%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 220 25% 20%;
+    --muted: 215 30% 25%;
     --muted-foreground: 215 20% 65%;
 
-    --accent: 174 70% 50%;
-    --accent-foreground: 220 30% 10%;
+    --accent: 160 60% 45%;
+    --accent-foreground: 215 35% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 20% 25%;
-    --input: 220 20% 25%;
-    --ring: 174 70% 50%;
+    --border: 215 25% 28%;
+    --input: 215 25% 28%;
+    --ring: 160 60% 45%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
     /* Custom colors */
-    --glow: 174 80% 55%;
-    --star: 45 100% 90%;
-    --star-bright: 45 100% 95%;
+    --glow: 160 70% 50%;
+    --node: 160 60% 45%;
 
     /* Sidebar (keep for compatibility) */
-    --sidebar-background: 220 30% 10%;
+    --sidebar-background: 215 35% 15%;
     --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 174 70% 50%;
-    --sidebar-primary-foreground: 220 30% 10%;
-    --sidebar-accent: 220 25% 18%;
+    --sidebar-primary: 160 60% 45%;
+    --sidebar-primary-foreground: 215 35% 15%;
+    --sidebar-accent: 215 30% 22%;
     --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 220 20% 25%;
-    --sidebar-ring: 174 70% 50%;
+    --sidebar-border: 215 25% 28%;
+    --sidebar-ring: 160 60% 45%;
   }
 
   .dark {
