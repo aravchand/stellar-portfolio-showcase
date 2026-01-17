@@ -2,34 +2,34 @@ import ProjectCard from './ProjectCard';
 
 const featuredProjects = [
   {
-    title: 'Project Alpha',
-    description: 'A cutting-edge application leveraging modern web technologies to solve complex user experience challenges. Built with React, TypeScript, and advanced state management.',
-    links: { demo: '#', github: '#' },
+    title: 'Project BLADE',
+    description: 'A novel impedance-based sensor for robotic minimally invasive surgery. This research presents the first real-time force sensor based on dynamic changes in bioimpedance values and introduces predictive models for the relationship between applied force and impedance.',
+    links: { paper: '#', video: '#' },
   },
   {
-    title: 'Project Beta',
-    description: 'Full-stack platform enabling seamless data visualization and real-time collaboration. Features include live updates, custom charts, and team workspaces.',
-    links: { demo: '#', paper: '#' },
+    title: 'FABP5 Research',
+    description: 'Investigation of a protein called FABP5 within the brain\'s reward center to see if it could be a target for treating addiction. Discovery suggests targeting FABP5 in glial cells could reduce drug withdrawal symptoms.',
+    links: { paper: '#', poster: '#' },
   },
   {
-    title: 'Project Gamma',
-    description: 'Machine learning pipeline for natural language processing tasks. Includes sentiment analysis, entity recognition, and text classification modules.',
-    links: { demo: '#', video: '#' },
-  },
-  {
-    title: 'Project Delta',
-    description: 'Distributed systems architecture implementing fault-tolerant messaging and event-driven microservices for high-availability applications.',
-    links: { paper: '#', github: '#' },
-  },
-  {
-    title: 'Project Epsilon',
-    description: 'Mobile-first progressive web app with offline capabilities, push notifications, and native-like performance on all devices.',
+    title: 'Kalirouna',
+    description: 'A comprehensive platform leveraging modern technologies to solve complex challenges. Built with cutting-edge frameworks and advanced state management for optimal performance.',
     links: { demo: '#' },
   },
   {
-    title: 'Project Zeta',
-    description: 'Developer tools and CLI utilities that streamline workflows, automate repetitive tasks, and enhance productivity across development teams.',
-    links: { github: '#', demo: '#' },
+    title: 'Neural Network Framework',
+    description: 'Custom deep learning framework optimized for edge devices. Features include automatic differentiation, GPU acceleration, and modular architecture for research flexibility.',
+    links: { paper: '#', demo: '#' },
+  },
+  {
+    title: 'Robotics Control System',
+    description: 'Advanced control algorithms for precision robotics applications. Implements real-time feedback loops and adaptive learning for improved accuracy in surgical contexts.',
+    links: { video: '#' },
+  },
+  {
+    title: 'Data Visualization Platform',
+    description: 'Interactive visualization tools for complex scientific datasets. Enables researchers to explore multidimensional data with intuitive interfaces and collaborative features.',
+    links: { demo: '#' },
   },
 ];
 
@@ -40,7 +40,7 @@ const researchProjects = [
     links: { paper: '#' },
   },
   {
-    title: 'Prime Number Distribution',
+    title: 'Prime Number Distribution Studies',
     description: 'Investigation into patterns of prime number distribution using computational methods and analytical number theory. Developed new heuristics for prime gap estimation.',
     links: { paper: '#', video: '#' },
   },
@@ -49,12 +49,12 @@ const researchProjects = [
 const socialProjects = [
   {
     title: 'Code for Community',
-    description: 'Founded an initiative teaching programming to underserved youth. Developed curriculum covering web development, Python, and computational thinking for 200+ students.',
+    description: 'Founded an initiative teaching programming to underserved youth. Developed curriculum covering web development, Python, and computational thinking for 200+ students annually.',
     links: { demo: '#' },
   },
   {
-    title: 'Open Source Mentorship',
-    description: 'Mentorship program connecting experienced developers with newcomers to open source. Facilitated over 50 successful first contributions to major projects.',
+    title: 'Open Source Mentorship Program',
+    description: 'Mentorship program connecting experienced developers with newcomers to open source. Facilitated over 50 successful first contributions to major open-source projects.',
     links: { demo: '#' },
   },
 ];
@@ -63,9 +63,11 @@ const ProjectsSection = () => {
   return (
     <>
       {/* Featured Projects */}
-      <section id="projects" className="py-24 relative">
+      <section id="projects" className="py-20 relative">
         <div className="container mx-auto px-4">
-          <h2 className="section-heading text-center mb-12">Featured Projects</h2>
+          <h2 className="text-2xl font-bold text-center mb-12 uppercase tracking-wide">
+            Featured Projects
+          </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {featuredProjects.map((project, index) => (
@@ -82,10 +84,10 @@ const ProjectsSection = () => {
       </section>
 
       {/* Research Projects */}
-      <section className="py-24 relative bg-secondary/20">
+      <section className="py-20 relative">
         <div className="container mx-auto px-4">
-          <h2 className="section-heading text-center mb-12">
-            Mathematics & Cryptography Research
+          <h2 className="text-2xl font-bold text-center mb-12 uppercase tracking-wide">
+            Mathematics, Cryptography Research
           </h2>
 
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
@@ -103,9 +105,11 @@ const ProjectsSection = () => {
       </section>
 
       {/* Social Initiatives */}
-      <section id="social" className="py-24 relative">
+      <section id="social" className="py-20 relative">
         <div className="container mx-auto px-4">
-          <h2 className="section-heading text-center mb-12">Social Initiatives</h2>
+          <h2 className="text-2xl font-bold text-center mb-12 uppercase tracking-wide">
+            Social Initiatives
+          </h2>
 
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {socialProjects.map((project, index) => (
