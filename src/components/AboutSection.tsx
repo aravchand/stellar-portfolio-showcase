@@ -1,84 +1,31 @@
-import ToolsSection from './ToolsSection';
-
 const AboutSection = () => {
   return (
-    <section id="about" className="py-20 relative">
-      <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
-          {/* Left Column - About Me */}
-          <div>
-            <h2 className="text-xl font-bold mb-6">About Me</h2>
+    <section id="about" className="py-24 relative">
+      <div className="container mx-auto px-4 max-w-4xl">
+        <h2 className="section-heading text-center mb-12">About Me</h2>
 
-            <div className="space-y-4 text-sm text-muted-foreground leading-relaxed">
-              <p>
-                Hi! I'm Your Name, and I'm from [Your Location].
-              </p>
+        <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+          <p className="animate-slide-up opacity-0 stagger-1">
+            Hi! I'm a passionate researcher and developer with a focus on mathematics, 
+            cryptography, and building impactful social initiatives.
+          </p>
 
-              <p>
-                I'm a student at{' '}
-                <a href="#" className="text-primary hover:underline">
-                  Your School
-                </a>{' '}
-                and actively involved in research and entrepreneurship.
-              </p>
+          <p className="animate-slide-up opacity-0 stagger-2">
+            My work spans from theoretical research in number theory and cryptographic 
+            protocols to hands-on development of applications that solve real-world problems. 
+            I believe in the power of technology to create positive change.
+          </p>
 
-              <p>
-                I'm familiar with various software and hardware development tools, 
-                including Python for data analysis and machine learning, Arduino and 
-                Raspberry Pi for hardware prototyping, and CAD software for 3D modeling 
-                and manufacturing.
-              </p>
+          <p className="animate-slide-up opacity-0 stagger-3">
+            When I'm not coding or researching, you can find me contributing to open-source 
+            projects, mentoring aspiring developers, or exploring new ideas at the intersection 
+            of mathematics and computer science.
+          </p>
 
-              <p>
-                My work has received recognition at various competitions including{' '}
-                <a href="#" className="text-primary hover:underline">
-                  Notable Achievement 1
-                </a>
-                , the{' '}
-                <a href="#" className="text-primary hover:underline">
-                  Notable Achievement 2
-                </a>
-                , and other{' '}
-                <a href="#" className="text-primary hover:underline">
-                  awards
-                </a>
-                .
-              </p>
-
-              <p>
-                In addition to being{' '}
-                <a href="#" className="text-primary hover:underline">
-                  featured
-                </a>{' '}
-                in various media outlets for my work, I continue to pursue new 
-                opportunities in research and innovation. Check it out{' '}
-                <a href="#" className="text-primary hover:underline">
-                  here!
-                </a>
-              </p>
-
-              <p>
-                In my free time, I enjoy{' '}
-                <a href="#" className="text-primary hover:underline">
-                  hobbies
-                </a>
-                , cooking, and playing music. I speak multiple languages.
-              </p>
-
-              <p>
-                <strong>Update:</strong> Recent exciting news about achievements 
-                or updates can go{' '}
-                <a href="#" className="text-primary hover:underline">
-                  here!
-                </a>
-              </p>
-            </div>
-          </div>
-
-          {/* Right Column - Tools */}
-          <div>
-            <ToolsSection />
-          </div>
+          <p className="animate-slide-up opacity-0 stagger-4">
+            I'm always excited to collaborate on projects that push boundaries and make 
+            a meaningful difference in people's lives.
+          </p>
         </div>
       </div>
     </section>

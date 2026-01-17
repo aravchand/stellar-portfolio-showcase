@@ -1,38 +1,49 @@
+import { 
+  Code2, 
+  Database, 
+  Lock, 
+  Brain, 
+  Terminal, 
+  Cpu,
+  FileCode,
+  Server 
+} from 'lucide-react';
+
 const tools = [
-  { name: 'PyTorch', color: '#EE4C2C', icon: '🔥' },
-  { name: 'TensorFlow', color: '#FF6F00', icon: '🧠' },
-  { name: 'Swift', color: '#F05138', icon: '🐦' },
-  { name: 'Fusion 360', color: '#FF6B35', icon: '⚙️' },
-  { name: 'Excel', color: '#217346', icon: '📊' },
-  { name: 'Adobe Premiere', color: '#9999FF', icon: '🎬' },
-  { name: 'Arduino', color: '#00979D', icon: '🔌' },
-  { name: 'Raspberry Pi', color: '#C51A4A', icon: '🍓' },
+  { name: 'Python', icon: Code2 },
+  { name: 'Rust', icon: Terminal },
+  { name: 'TypeScript', icon: FileCode },
+  { name: 'PostgreSQL', icon: Database },
+  { name: 'Cryptography', icon: Lock },
+  { name: 'Machine Learning', icon: Brain },
+  { name: 'Systems', icon: Cpu },
+  { name: 'Cloud', icon: Server },
 ];
 
 const ToolsSection = () => {
   return (
-    <div>
-      <h2 className="text-xl font-bold mb-8 text-center">Tools and Technology</h2>
+    <section className="py-16 relative">
+      <div className="container mx-auto px-4">
+        <h2 className="section-heading text-center mb-12">Tools & Technology</h2>
 
-      <div className="grid grid-cols-4 gap-4">
-        {tools.map((tool) => (
-          <div
-            key={tool.name}
-            className="flex flex-col items-center gap-2 p-3"
-          >
-            <div 
-              className="w-14 h-14 rounded-xl flex items-center justify-center text-2xl"
-              style={{ backgroundColor: `${tool.color}20` }}
+        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-6">
+          {tools.map((tool, index) => (
+            <div
+              key={tool.name}
+              className="flex flex-col items-center gap-3 p-4 rounded-xl bg-card/50 border border-border hover:border-primary/50 transition-all duration-300 hover:scale-105 group"
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
-              {tool.icon}
+              <div className="w-12 h-12 rounded-lg bg-secondary flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                <tool.icon className="w-6 h-6 text-primary" />
+              </div>
+              <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors text-center">
+                {tool.name}
+              </span>
             </div>
-            <span className="text-xs text-muted-foreground text-center leading-tight">
-              {tool.name}
-            </span>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
