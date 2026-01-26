@@ -1,0 +1,15 @@
+{
+  "short_name": "AravPortfolio",
+  "name": "Arav Portfolio",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "any"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#08129B",
+  "theme_color": "#08129B"
+}
