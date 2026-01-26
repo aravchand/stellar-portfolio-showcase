@@ -1,80 +1,97 @@
-import { ArrowDown, FileText } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { ArrowRight, Info, Download, MessageSquare, Linkedin, ArrowDown } from 'lucide-react';
+import headshotImage from './assets/headshot.jpg';
 
 const HeroSection = () => {
   return (
-    <section
-      id="home"
-      className="min-h-screen flex flex-col items-center justify-center relative px-4 pt-16"
-    >
-      <div className="text-center max-w-4xl mx-auto animate-fade-in">
-        {/* Profile Image */}
-        <div className="mb-8 relative inline-block">
-          <div className="w-40 h-40 md:w-48 md:h-48 rounded-2xl overflow-hidden border-4 border-primary/30 shadow-[0_0_40px_hsl(var(--primary)/0.3)] animate-float">
-            <div className="w-full h-full bg-gradient-to-br from-primary/20 to-secondary flex items-center justify-center">
-              <span className="text-6xl">👤</span>
-            </div>
+    <section id="home" className="py-16 lg:py-32 mx-auto">
+      <div className="lg:py-6 container max-w-screen-lg mx-auto flex flex-col md:flex-row items-center mb-4 px-2 md:px-16">
+        {/* Left Column: Profile, Name, Title, and Action Links */}
+        <div className="md:w-1/2 flex flex-col items-center">
+          {/* Profile Image */}
+          <img
+            src={headshotImage}
+            alt="Profile Image"
+            className="py-2 rounded-2xl w-64 h-64 object-cover"
+            onError={(e) => {
+              // Fallback to placeholder if image doesn't exist
+              const target = e.target as HTMLImageElement;
+              target.style.display = 'none';
+              // const placeholder = document.createElement('div');
+              // placeholder.className = 'py-2 rounded-2xl w-64 h-64 bg-gradient-to-br from-primary/20 to-secondary flex items-center justify-center';
+              // placeholder.innerHTML = '<span class="text-6xl">👤</span>';
+              // target.parentNode?.appendChild(placeholder);
+            }}
+          />
+
+          <div className="flex flex-col items-center mx-auto">
+            <h1 className="text-xl font-bold text-foreground p-2">
+              Hi, I'm Arav Chand!
+            </h1>
+
+            <p className="text-base lg:text-lg px-4 mt-2 text-center text-foreground">
+              Researcher, Inventor in Humanitarian Tech
+              {/* Building Tech Today for a Better Tomorrow */}
+            </p>
           </div>
-          <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-primary rounded-full flex items-center justify-center shadow-lg">
-            <span className="text-primary-foreground text-sm">✨</span>
+
+          <div className="my-6 flex items-center justify-center space-x-4">
+            <a
+              href="#projects"
+              className="text-foreground font-semibold hover:text-primary hover:underline transition duration-300 inline-flex items-center gap-1"
+            >
+              See Projects <ArrowRight size={16} />
+            </a>
+            <a
+              href="#about"
+              className="btn-dark px-4 py-2 font-semibold hover:bg-primary hover:text-primary-foreground hover:underline inline-flex items-center gap-2 rounded-md"
+            >
+              More Info
+              <Info
+                size={16}
+                className="animate-bounce"
+                style={{ animationDuration: '1s', animationIterationCount: 'infinite', animationTimingFunction: 'cubic-bezier(0.25, 0.1, 0.25, 1)' }}
+              />
+            </a>
           </div>
         </div>
 
-        {/* Greeting */}
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 glow-text">
-          Hi, I'm <span className="gradient-text">Your Name</span>!
-        </h1>
+        {/* Right Column: Download CV and Connect Section */}
+        <div className="md:w-1/2 p-4 text-center">
+          <div className="mb-6 py-4">
+            <a
+              href="#"
+              target="_blank"
+              className="btn-dark py-2 px-4 hover:bg-primary hover:text-primary-foreground inline-flex items-center gap-2 rounded-md"
+            >
+              <ArrowDown size={16} className="animate-pulse" />
+              Download CV
+            </a>
+          </div>
 
-        {/* Subtitle */}
-        <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-          Researcher, Developer & Innovator
-        </p>
+          <h3 className="text-xl font-semibold text-foreground mb-4">Connect with Me</h3>
 
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-          <Button
-            asChild
-            size="lg"
-            className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_20px_hsl(var(--primary)/0.4)] transition-all duration-300 hover:shadow-[0_0_30px_hsl(var(--primary)/0.6)]"
-          >
-            <a href="#projects">See Projects</a>
-          </Button>
-          <Button
-            asChild
-            variant="outline"
-            size="lg"
-            className="border-primary/50 text-foreground hover:bg-primary/10 hover:border-primary"
-          >
-            <a href="#about">More Info</a>
-          </Button>
-        </div>
+          <ul className="flex items-center justify-center space-x-4 p-2">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/arav-chand-978120211/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground hover:text-primary transition duration-300"
+              >
+                <Linkedin size={32} />
+              </a>
+            </li>
+          </ul>
 
-        {/* Download CV */}
-        <a
-          href="#"
-          className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
-        >
-          <FileText size={18} />
-          <span>Download CV</span>
-        </a>
-
-        {/* Connect Section */}
-        <div className="mt-12">
-          <p className="text-sm text-muted-foreground mb-4">Connect with Me</p>
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
-          >
-            <span>Contact</span>
-            <ArrowDown size={16} className="animate-bounce" />
-          </a>
-        </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
-        <div className="w-6 h-10 border-2 border-muted-foreground/30 rounded-full flex justify-center pt-2">
-          <div className="w-1 h-2 bg-primary rounded-full animate-bounce" />
+          <div className="mt-4 py-2">
+            <a
+              href="#contact"
+              className="btn-dark py-2 px-4 mx-auto hover:bg-primary hover:text-primary-foreground inline-flex items-center gap-2 rounded-md"
+            >
+              <MessageSquare size={16} className="animate-pulse" />
+              Contact
+            </a>
+          </div>
         </div>
       </div>
     </section>

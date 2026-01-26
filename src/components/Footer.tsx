@@ -3,11 +3,11 @@ const Footer = () => {
     <footer className="py-8 border-t border-border">
       <div className="container mx-auto px-4 text-center">
         <p className="text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Portfolio. All rights reserved.
+          ARAV CHAND - © {new Date().getFullYear()}
         </p>
-        <p className="text-xs text-muted-foreground/60 mt-2">
+        {/* <p className="text-xs text-muted-foreground/60 mt-2">
           Built with passion and lots of ☕
-        </p>
+        </p> */}
       </div>
     </footer>
   );

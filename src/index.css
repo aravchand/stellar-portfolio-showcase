@@ -2,35 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
 
 @layer base {
   :root {
-    /* Dark cosmic theme */
-    --background: 220 30% 10%;
-    --foreground: 210 40% 98%;
+    /* Dark cosmic theme - lighter background for better contrast with dark buttons */
+    --background: 220 25% 12%;
+    --foreground: 0 0% 100%;
 
     --card: 220 30% 13%;
-    --card-foreground: 210 40% 98%;
+    --card-foreground: 0 0% 100%;
 
     --popover: 220 30% 13%;
-    --popover-foreground: 210 40% 98%;
+    --popover-foreground: 0 0% 100%;
 
     /* Cyan/Teal accent */
     --primary: 174 70% 50%;
     --primary-foreground: 220 30% 10%;
 
-    --secondary: 220 25% 18%;
-    --secondary-foreground: 210 40% 98%;
+    /* Darker secondary for buttons - almost black for maximum contrast */
+    --secondary: 220 15% 8%;
+    --secondary-foreground: 0 0% 100%;
 
     --muted: 220 25% 20%;
-    --muted-foreground: 215 20% 65%;
+    --muted-foreground: 215 20% 75%;
 
     --accent: 174 70% 50%;
     --accent-foreground: 220 30% 10%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
     --border: 220 20% 25%;
     --input: 220 20% 25%;
@@ -44,33 +44,33 @@
     --star-bright: 45 100% 95%;
 
     /* Sidebar (keep for compatibility) */
-    --sidebar-background: 220 30% 10%;
-    --sidebar-foreground: 210 40% 98%;
+    --sidebar-background: 220 25% 12%;
+    --sidebar-foreground: 0 0% 100%;
     --sidebar-primary: 174 70% 50%;
     --sidebar-primary-foreground: 220 30% 10%;
-    --sidebar-accent: 220 25% 18%;
-    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-accent: 220 15% 8%;
+    --sidebar-accent-foreground: 0 0% 100%;
     --sidebar-border: 220 20% 25%;
     --sidebar-ring: 174 70% 50%;
   }
 
   .dark {
-    --background: 220 30% 10%;
-    --foreground: 210 40% 98%;
+    --background: 220 25% 12%;
+    --foreground: 0 0% 100%;
     --card: 220 30% 13%;
-    --card-foreground: 210 40% 98%;
+    --card-foreground: 0 0% 100%;
     --popover: 220 30% 13%;
-    --popover-foreground: 210 40% 98%;
+    --popover-foreground: 0 0% 100%;
     --primary: 174 70% 50%;
     --primary-foreground: 220 30% 10%;
-    --secondary: 220 25% 18%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 220 15% 8%;
+    --secondary-foreground: 0 0% 100%;
     --muted: 220 25% 20%;
-    --muted-foreground: 215 20% 65%;
+    --muted-foreground: 215 20% 75%;
     --accent: 174 70% 50%;
     --accent-foreground: 220 30% 10%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
     --border: 220 20% 25%;
     --input: 220 20% 25%;
     --ring: 174 70% 50%;
@@ -84,7 +84,7 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 
   html {
@@ -115,6 +115,31 @@
 
   .nav-link-active {
     @apply text-primary;
+  }
+
+  /* Light blue button styles that complement the cyan/teal palette */
+  .btn-dark {
+    background-color: #42b2d7;
+    color: hsl(0 0% 100%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.2), 0 0 20px rgba(45, 169, 210, 0.4);
+    transform: translateY(-1px);
+  }
+  
+  /* .btn-dark:hover {
+    background-color: #08129B;
+    color: hsl(0 0% 100%);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  } */
+
+  a {
+    color: hsl(174, 70%, 50%);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #42b2d7;
+    text-decoration: underline;
   }
 }
 

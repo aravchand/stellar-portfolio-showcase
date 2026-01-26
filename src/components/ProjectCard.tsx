@@ -39,7 +39,7 @@ const ProjectCard = ({ title, description, image, links }: ProjectCardProps) => 
         <h3 className="text-xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors">
           {title}
         </h3>
-        <p className="text-muted-foreground text-sm mb-4 line-clamp-3">
+        <p className="text-foreground text-sm mb-4">
           {description}
         </p>
 
@@ -51,7 +51,9 @@ const ProjectCard = ({ title, description, image, links }: ProjectCardProps) => 
                 asChild
                 size="sm"
                 variant="outline"
-                className="border-primary/30 hover:bg-primary/10 hover:border-primary text-xs"
+                // className="border-primary/30 hover:bg-primary/10 hover:border-primary text-xs"
+                className="btn-dark hover:bg-primary hover:text-primary-foreground rounded-md"
+
               >
                 <a href={links.paper} target="_blank" rel="noopener noreferrer">
                   <FileText size={14} className="mr-1" />
@@ -64,7 +66,7 @@ const ProjectCard = ({ title, description, image, links }: ProjectCardProps) => 
                 asChild
                 size="sm"
                 variant="outline"
-                className="border-primary/30 hover:bg-primary/10 hover:border-primary text-xs"
+                className="btn-dark hover:bg-primary hover:text-primary-foreground rounded-md"
               >
                 <a href={links.video} target="_blank" rel="noopener noreferrer">
                   <Play size={14} className="mr-1" />
@@ -76,7 +78,9 @@ const ProjectCard = ({ title, description, image, links }: ProjectCardProps) => 
               <Button
                 asChild
                 size="sm"
-                className="bg-primary text-primary-foreground hover:bg-primary/90 text-xs"
+                variant='ghost'
+                className="btn-dark hover:bg-primary hover:text-primary-foreground rounded-md"
+
               >
                 <a href={links.demo} target="_blank" rel="noopener noreferrer">
                   <ExternalLink size={14} className="mr-1" />

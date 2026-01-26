@@ -1,8 +1,7 @@
 import ParticleBackground from '@/components/ParticleBackground';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
-import AboutSection from '@/components/AboutSection';
-import ToolsSection from '@/components/ToolsSection';
+import AboutSection from '@/components/AboutToolsSection';
 import ProjectsSection from '@/components/ProjectsSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
@@ -15,7 +14,6 @@ const Index = () => {
       <main className="relative z-10">
         <HeroSection />
         <AboutSection />
-        <ToolsSection />
         <ProjectsSection />
         <ContactSection />
       </main>
