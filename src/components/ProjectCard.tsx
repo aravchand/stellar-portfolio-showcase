@@ -17,12 +17,12 @@ const ProjectCard = ({ title, description, image, links }: ProjectCardProps) => 
   return (
     <div className="group bg-card/50 border border-border rounded-xl overflow-hidden card-hover">
       {/* Image */}
-      <div className="aspect-video bg-gradient-to-br from-secondary to-muted relative overflow-hidden">
+      <div className="aspect-video relative overflow-hidden">
         {image ? (
           <img 
             src={image} 
             alt={title} 
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            className="w-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center">
@@ -31,12 +31,12 @@ const ProjectCard = ({ title, description, image, links }: ProjectCardProps) => 
             </div>
           </div>
         )}
-        <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent opacity-60" />
+        <div className="absolute inset-0 opacity-60" />
       </div>
 
       {/* Content */}
       <div className="p-6">
-        <h3 className="text-xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors">
+        <h3 className="text-xl font-bold mb-3 text-foreground transition-colors">
           {title}
         </h3>
         <p className="text-foreground text-sm mb-4">
@@ -57,11 +57,11 @@ const ProjectCard = ({ title, description, image, links }: ProjectCardProps) => 
               >
                 <a href={links.paper} target="_blank" rel="noopener noreferrer">
                   <FileText size={14} className="mr-1" />
-                  Read Paper
+                  Paper
                 </a>
               </Button>
             )}
-            {links.video && (
+            {/* {links.video && (
               <Button
                 asChild
                 size="sm"
@@ -73,7 +73,7 @@ const ProjectCard = ({ title, description, image, links }: ProjectCardProps) => 
                   Watch
                 </a>
               </Button>
-            )}
+            )} */}
             {links.demo && (
               <Button
                 asChild
@@ -84,7 +84,7 @@ const ProjectCard = ({ title, description, image, links }: ProjectCardProps) => 
               >
                 <a href={links.demo} target="_blank" rel="noopener noreferrer">
                   <ExternalLink size={14} className="mr-1" />
-                  Demo
+                  Demo 
                 </a>
               </Button>
             )}

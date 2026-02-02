@@ -102,11 +102,13 @@
   }
 
   .glow-text {
-    text-shadow: 0 0 20px hsl(var(--primary) / 0.5), 0 0 40px hsl(var(--primary) / 0.3);
+    /* Removed glow effect */
+    text-shadow: none;
   }
 
   .card-hover {
-    @apply transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_30px_hsl(var(--primary)/0.2)];
+    @apply transition-all duration-300 hover:scale-[1.02];
+    /* Removed hover shadow glow */
   }
 
   .nav-link {
@@ -119,18 +121,12 @@
 
   /* Light blue button styles that complement the cyan/teal palette */
   .btn-dark {
-    background-color: #42b2d7;
+    background-color: #3777ff;
     color: hsl(0 0% 100%);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.2), 0 0 20px rgba(45, 169, 210, 0.4);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.2);
     transform: translateY(-1px);
+    /* Removed continuous glow */
   }
-  
-  /* .btn-dark:hover {
-    background-color: #08129B;
-    color: hsl(0 0% 100%);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
-  } */
 
   a {
     color: hsl(174, 70%, 50%);
@@ -149,7 +145,8 @@
   }
 
   .animate-pulse-glow {
-    animation: pulse-glow 2s ease-in-out infinite;
+    /* Removed pulse glow animation */
+    animation: none;
   }
 
   .animate-fade-in {
