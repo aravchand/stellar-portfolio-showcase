@@ -73,7 +73,7 @@ const HeroSection = () => {
           <ul className="flex items-center justify-center space-x-4 p-2">
             <li>
               <a
-                href="https://www.linkedin.com/in/arav-chand-978120211/"
+                href="https://www.linkedin.com/in/aravchand"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-foreground hover:text-primary transition duration-300"

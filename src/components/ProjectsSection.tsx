@@ -1,6 +1,6 @@
 import ProjectCard from './ProjectCard';
 import halthateimage from './assets/projects/halthateprojectimage.png';
-import mitnasazrimage from './assets/projects/screenshot of simulation.png';
+import mitnasazrimage from './assets/projects/MIT NASA ZeroRobotics Portfolio Image.png';
 import uberlinkimage from './assets/projects/uberlinkimage.png';
 import aircontrolimage from './assets/projects/2025 THLI Tech Showcase.png';
 import nasaengineeringimage from './assets/projects/NASA Engineering Insitute portfolio image.jpg';

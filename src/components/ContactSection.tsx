@@ -21,9 +21,9 @@ const ContactSection = () => {
   };
 
   const socialLinks = [
-    { name: 'LinkedIn', icon: Linkedin, href: '#' },
-    { name: 'GitHub', icon: Github, href: '#' },
-    { name: 'Email', icon: Mail, href: 'mailto:hello@example.com' },
+    { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/in/aravchand/' },
+    { name: 'GitHub', icon: Github, href: 'https://github.com/aravchand' },
+    { name: 'Email', icon: Mail, href: 'mailto:aravchando8@gmail.com' },
   ];
 
   return (
