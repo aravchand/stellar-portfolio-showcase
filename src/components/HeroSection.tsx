@@ -57,7 +57,7 @@ const HeroSection = () => {
 
         {/* Right Column: Download CV and Connect Section */}
         <div className="md:w-1/2 p-4 text-center">
-          <div className="mb-6 py-4">
+          {/* <div className="mb-6 py-4">
             <a
               href="#"
               target="_blank"
@@ -66,7 +66,7 @@ const HeroSection = () => {
               <ArrowDown size={16} className="animate-pulse" />
               Download CV
             </a>
-          </div>
+          </div> */}
 
           <h3 className="text-xl font-semibold text-foreground mb-4">Connect with Me</h3>
 
