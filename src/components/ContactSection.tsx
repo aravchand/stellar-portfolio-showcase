@@ -30,11 +30,11 @@ const ContactSection = () => {
     <section id="contact" className="py-24 relative">
       <div className="container mx-auto px-4 max-w-2xl">
         <h2 className="section-heading text-center mb-4">Contact</h2>
-        <p className="text-center text-muted-foreground mb-12">
-          Send Me a Message
+         <p className="text-center text-foreground mb-12">
+          Let's get connected!
         </p>
 
-        <form onSubmit={handleSubmit} className="space-y-6">
+        {/* <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <Input
               type="email"
@@ -62,7 +62,7 @@ const ContactSection = () => {
             <Send size={18} className="mr-2" />
             Send Message
           </Button>
-        </form>
+        </form> */}
 
         {/* Social Links */}
         <div className="mt-12 flex justify-center gap-6">
@@ -70,10 +70,10 @@ const ContactSection = () => {
             <a
               key={social.name}
               href={social.href}
-              className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center hover:bg-primary/20 hover:scale-110 transition-all duration-300 group"
+              className="w-20 h-20 rounded-full bg-primary flex items-center justify-center hover:bg-primary/20 hover:scale-110 transition-all duration-300 group"
               aria-label={social.name}
             >
-              <social.icon className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+              <social.icon className="w-10 h-10 text-foreground group-hover:text-primary transition-colors" />
             </a>
           ))}
         </div>

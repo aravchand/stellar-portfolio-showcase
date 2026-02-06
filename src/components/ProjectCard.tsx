@@ -61,7 +61,7 @@ const ProjectCard = ({ title, description, image, links }: ProjectCardProps) => 
                 </a>
               </Button>
             )}
-            {/* {links.video && (
+            {links.video && (
               <Button
                 asChild
                 size="sm"
@@ -69,11 +69,11 @@ const ProjectCard = ({ title, description, image, links }: ProjectCardProps) => 
                 className="btn-dark hover:bg-primary hover:text-primary-foreground rounded-md"
               >
                 <a href={links.video} target="_blank" rel="noopener noreferrer">
-                  <Play size={14} className="mr-1" />
-                  Watch
+                  <FileText size={14} className="mr-1" />
+                  Read More
                 </a>
               </Button>
-            )} */}
+            )}
             {links.demo && (
               <Button
                 asChild

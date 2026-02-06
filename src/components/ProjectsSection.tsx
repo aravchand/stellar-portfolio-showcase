@@ -5,6 +5,10 @@ import uberlinkimage from './assets/projects/uberlinkimage.png';
 import aircontrolimage from './assets/projects/2025 THLI Tech Showcase.png';
 import nasaengineeringimage from './assets/projects/NASA Engineering Insitute portfolio image.jpg';
 import cyberbullyingimage from './assets/projects/Copy of Arav Chand - Machine Learning, Sentiment Analysis, Cyberbullying, Google Technologies - Research Symposium.ppt.png';
+import mathresearchimage from './assets/projects/mathresearch image.png';
+import cryptographyimage from './assets/projects/cryptography portfolio image.png';
+import projectclerisimage from './assets/projects/projectcleris card image.png';
+import sweetsurplusimage from './assets/projects/Sweet Surplus Image.png';
 
 const featuredProjects = [
   {
@@ -44,14 +48,14 @@ const featuredProjects = [
     image: nasaengineeringimage,
     description:
       'NASA Glenn Engineering Institute is a highly selective, immersive engineering program, where I was chosen as 1 of 60 students nationwide to conduct applied research at NASA’s Glenn Research Center in Cleveland, OH. I designed and tested custom Mars-rover wheel geometries, using the JPL Grouser Spacing Equation to optimize tread design for traction and load distribution. We conducted testing on a seven-degree regolith slopebed simulating extraplanetary terrain, where our final design outperformed Curiosity’s rover wheel by 35% in traction efficiency. In a parallel project, I helped design an acoustic dampening system that reduced noise by 23 decibels without restricting airflow, modeling constraints similar to those faced in jet engine takeoff to mitigate harmful noise pollution.',
-    links: { demo: '#', paper: '#' },
+    links: { demo: 'https://drive.google.com/file/d/1LUwXw6wJJV_uIZhneaPUPoICFttTrrqr/view?usp=sharing'},
   },
   {
     title: 'Cyberbullying Sentiment Classification',
     image: cyberbullyingimage,
     description:
       'I developed a machine learning research project focused on detecting and categorizing harmful language within digital environments. I developed a Support Vector Machine (SVM)–based sentiment classification pipeline in Python using TensorFlow, trained on 40,000+ human-labeled tweets spanning ethnicity-, gender-, religion-, and age-based cyberbullying, as well as non-bullying content. Using word2vec embeddings for semantic representation, the model achieved 91.43% accuracy on previously unseen data, with low false-negative rates across most categories. I then integrated the trained model into Google Workspace via Google Colaboratory, enabling automated scanning and classification to flag potential cyberbullying in real time.',
-    links: { paper: '#', demo: '#' },
+    links: { paper: 'https://drive.google.com/file/d/1VPoIegiE8AFGgpc3Mh2xhmoxsG_uSv2Y/view?usp=sharing' },
   },
 ];
 
@@ -59,32 +63,36 @@ const researchProjects = [
   {
     // title: 'Primes in Pascal-like Hyperpyramids',
     title: 'Universal Matrix for Prime Divisibility',
+    image: mathresearchimage,
     description:
       // 'This is a research contribution in combinatorial number theory and algebraic combinatorics that extends classical enumerative formulas to broad new families of generalized binomial coefficients. Building on Rowland’s matrix product formula for counting standard binomial coefficients by their divisibility by a prime p, I developed universal matrix product formulas that count Fibonomial and C-nomial coefficients for any strong divisibility sequence—and showed these matrices are independent of the underlying sequence. I further generalized these constructions to C-multinomial coefficients, unifying and broadening tools for analyzing prime divisibility distributions in combinatorial sequences. This work was published on Integers, won the Top 4 Grand Award at the International Science and Engineering Fair (ISEF) 2025, and has been presented at multiple mathematics conferences (MAA Mid-Atlantic Conference, AMS Fall Southeastern Sectional Meeting, Jane Street\'s NYC Math Day, etc.). Predecessor project won at ISEF 2024: the AMS Karl Menger Memorial Award and the NSA Research Directorate Award.',
       'In this combinatorial number theory and algebraic combinatorics research, I extended classical enumerative formulas to broad new families of generalized binomial coefficients. I developed universal matrix product formulas that count Fibonacci analogues of binomial coefficients (and in general, C-nomial coefficients for any strong divisibility sequence C); I showed these matrices are independent of the underlying sequence C. This work unifies tools for analyzing prime divisibility distributions in combinatorial sequences. This work was published in the Integers journal, won the Top 4 Grand Award in Mathematics at the International Science and Engineering Fair (ISEF) 2025, and has been presented at multiple mathematics conferences (MAA Mid-Atlantic Conference, AMS Fall Southeastern Sectional Meeting, Jane Street\'s NYC Math Day, etc.). Predecessor project won at ISEF 2024: the AMS Karl Menger Memorial Award and the NSA Research Directorate Award.',
-    links: { paper: '#' },
+    links: { paper: 'https://arxiv.org/pdf/2508.18461', demo: 'https://isef.net/project/math022-universal-digit-matrix-for-generalized-binomials' },
   },
   {
     title: 'Software-Based CS-PRNG',
+    image: cryptographyimage,
     description:
       'I derive a cryptographically-secure pseudo-random number generator (CS-PRNG) based in my previous combinatorial number theory research. Building on my research into universal matrix product formulas for generalized binomial coefficients, I designed a software-only PRNG whose state evolution is governed by structured algebraic transformations rather than ad-hoc mixing heuristics. The construction emphasizes resistance to classical cryptanalytic attacks by leveraging non-linear state updates, sequence-agnostic matrix behavior, and mathematically constrained diffusion. Tested with NIST 800-22 standard tests suite, my Python implementation demonstrates statistical randomness after over 500M generated bits. Collaborated with guidance from NSA researchers, PNNL national laboratory experts, and MIT alumni industry professionals.',
-    links: { paper: '#', video: '#' },
+    links: { paper: 'https://drive.google.com/file/d/19NsbYAJuAoTtRAoDInBkODeX9oVzchnV/view?usp=sharing' },
   },
 ];
 
 const socialProjects = [
   {
     title: 'Project CLERIS',
+    image: projectclerisimage,
     description:
       // 'Project CLERIS is a global research-education initiative designed to make advanced STEM concepts accessible to students worldwide, breaking financial barriers to academia. I founded and led 50+ volunteers in the Research Course project to elucidate the process of conducting scientific research for students worldwide. Through a growing library of 16+ educational videos, Project CLERIS has reached 33,000+ learners across multiple countries, accumulating 3,000,000+ views and being featured by Associated Press News. The initiative reflects my commitment to educational equity—using rigorous technical knowledge to remove barriers to high-level learning and empower students who lack access to traditional academic resources.',
       'Project CLERIS is a global research-education initiative designed to make advanced STEM concepts accessible to students worldwide and break financial barriers to academia. I founded and led 50+ volunteers in the Research Course project which elucidates the process of conducting scientific research for students worldwide. The project guides students from topic ideation to local resource attainment and professorial mentorship to composing a paper for journal submission. Through a growing library of 16+ educational videos, Project CLERIS has reached 33,000+ learners across 100+ countries, accumulating 3,000,000+ views and being featured by Associated Press News.',
-    links: { demo: '#' },
+    links: { demo: 'https://projectcleris.org/' },
   },
   {
     title: 'Sweet Surplus',
+    image: sweetsurplusimage,
     description:
       'Sweet Surplus is a food-rescue and sustainability initiative I co-founded to reduce commercial food waste while strengthening community food security. As Head of Networking, I organize partnerships with local bakeries to redirect surplus baked goods to shelters and community organizations, transforming potential waste into consistent nutritional support for vulnerable populations. To ensure long-term viability, I designed an operational model that provides partner bakeries with measurable tax incentives, resulting in $40,000+ worth of food redistributed across multiple cities and countries and an average 7.5% revenue boost for participating businesses through tax deductions. This work was nationally recognized with the Daily Point of Light Award, honoring its sustained national impact in community service and civic innovation.',
-    links: { demo: '#' },
+    links: { video: 'https://www.pointsoflight.org/awards/this-volunteer-wants-to-de-bug-food-waste/', demo: 'https://sweetsurplus.plus/' },
   },
 ];
 

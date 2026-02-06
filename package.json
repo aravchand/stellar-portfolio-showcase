@@ -2,7 +2,7 @@
   "name": "vite_react_shadcn_ts",
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://aravchand.github.io/stellar-portfolio-showcase",
+  "homepage": "https://aravchand.com/",
   "private": true,
   "scripts": {
     "predeploy": "npm run build",
