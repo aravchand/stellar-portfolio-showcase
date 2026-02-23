@@ -53,12 +53,6 @@ const AboutSection = () => {
               </p>
 
               <p className="text-base text-foreground px-4 mt-2">
-                I thrive in the intersection between mathematics, computer science, society, and people. 
-                I believe in the power of technology to create positive humanitarian change, 
-                and I'm actively working towards advancing that impact.
-              </p> 
-
-              <p className="text-base text-foreground px-4 mt-2">
                 I've ranked Top 3 worldwide in the <a href='https://drive.google.com/file/d/1x3mF2lxGMngrjKraMY7rQbHOMSEcd-jw/view?usp=sharing' target='_blank' rel='noopener noreferrer'>Uber Global Hackathon 2023</a>  and
                 in the <a href='https://drive.google.com/file/d/1zzPRJ4KnxeF1bEvX-5mfUcCyl8ILx20_/view?usp=sharing' target='_blank' rel='noopener noreferrer'>MIT-NASA ZeroRobotics Lost in Space Competition 2025</a>.
               </p>
