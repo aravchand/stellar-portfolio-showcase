@@ -49,7 +49,7 @@ const AboutSection = () => {
 
             <div className="space-y-4">
               <p className="text-base text-foreground px-4 mt-2">
-                Hi! My name is Arav Chand, and I'm from Long Island, New York.
+                Hi! My name is Arav Chand, and I'm from Long Island, New York, studying Mathematics and Computer Science at Harvard University.
               </p>
 
               <p className="text-base text-foreground px-4 mt-2">
@@ -58,8 +58,8 @@ const AboutSection = () => {
               </p>
 
               <p className="text-base text-foreground px-4 mt-2">
-                My <a href="https://arxiv.org/abs/2508.18461" target="_blank" rel="noopener noreferrer">published</a> mathematics and cryptography research has won 2x at
-                the <a href="https://isef.net/profile/AravChand" target="_blank" rel="noopener noreferrer">2024 and 2025 International Science and Engineering Fair (ISEF)</a>, 
+                My <a href="https://arxiv.org/abs/2508.18461" target="_blank" rel="noopener noreferrer">published</a> mathematics and cryptography research has won 3x at
+                the <a href="https://isef.net/profile/AravChand" target="_blank" rel="noopener noreferrer">2024, 2025, and 2026 International Science and Engineering Fair (ISEF)</a>,
                 and earned <a href="https://drive.google.com/file/d/1YZnkE6b8YTt8yzOzUYJsiSrqGz9VkDq-/view?usp=sharing" target="_blank" rel="noopener noreferrer">global recognition from the National Security Agency (NSA)</a>. 
               </p>
 
